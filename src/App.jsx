@@ -83,12 +83,37 @@ export default function App() {
           </div>
         </section>
 
-        <Section id="projects" title="Featured Projects">
-          <div className="card-grid">
+        <Section id="education" title="Education">
+          <div className="card-grid two">
+            {education.map((item) => (
+              <article key={item.school} className="card">
+                <h3>{item.school}</h3>
+                <p className="muted">{item.degree}</p>
+                <p>{item.location}</p>
+                <p className="muted">{item.date}</p>
+              </article>
+            ))}
+          </div>
+        </Section>
+
+        <Section id="projects" title="Project Focus">
+          <div className="project-stack">
             {projects.map((project) => (
-              <article key={project.title} className="card">
-                <h3>{project.title}</h3>
-                <p>{project.detail}</p>
+              <article key={project.title} className="project">
+                <div className="project-title">
+                  <h3>{project.title}</h3>
+                  <p className="muted">{project.focus}</p>
+                </div>
+                <div className="project-body">
+                  <div>
+                    <p className="project-label">Approach</p>
+                    <p>{project.approach}</p>
+                  </div>
+                  <div>
+                    <p className="project-label">What I Learned</p>
+                    <p>{project.learning}</p>
+                  </div>
+                </div>
               </article>
             ))}
           </div>
@@ -133,19 +158,6 @@ export default function App() {
               <li key={item}>{item}</li>
             ))}
           </ul>
-        </Section>
-
-        <Section id="education" title="Education">
-          <div className="card-grid two">
-            {education.map((item) => (
-              <article key={item.school} className="card">
-                <h3>{item.school}</h3>
-                <p className="muted">{item.degree}</p>
-                <p>{item.location}</p>
-                <p className="muted">{item.date}</p>
-              </article>
-            ))}
-          </div>
         </Section>
 
         <Section id="contact" title="Contact">

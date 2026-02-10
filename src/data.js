@@ -27,23 +27,39 @@ export const education = [
 export const projects = [
   {
     title: "Contactless Sensing of Vital Signs via iPPG",
-    detail:
-      "Explored imaging photoplethysmography techniques to estimate vital signs without skin contact, emphasizing signal quality and real-world conditions.",
+    focus:
+      "Non-contact physiological monitoring for patient comfort and infection control.",
+    approach:
+      "Evaluated imaging photoplethysmography (iPPG) pipelines, with emphasis on ROI selection, motion artifact reduction, and signal processing for heart-rate and respiration estimation.",
+    learning:
+      "Learned how biomedical signal quality depends on optics, motion, and filtering choices, and how validation against clinical constraints drives sensor design tradeoffs.",
   },
   {
     title: "Effect of Formaldehyde Crosslinking on Agarose-Based Hydrogels",
-    detail:
-      "Investigated how crosslinking parameters influence mechanical and biological properties of agarose hydrogels for biomedical applications.",
+    focus:
+      "Biomaterial design for tissue engineering and drug-delivery scaffolds.",
+    approach:
+      "Studied how crosslinking parameters influence hydrogel structure and mechanical behavior, with attention to stiffness, diffusion, and biocompatibility considerations.",
+    learning:
+      "Strengthened my understanding of structure–property relationships and how to balance mechanical strength with biological performance in implantable materials.",
   },
   {
     title: "Efficacy of Deep Brain Stimulation on Parkinsonian Tremors",
-    detail:
-      "Assessed DBS strategies and outcomes, focusing on tremor reduction and therapeutic tradeoffs.",
+    focus:
+      "Neuromodulation outcomes for Parkinson’s disease and tremor physiology.",
+    approach:
+      "MATLAB analysis of rest-tremor velocity in 16 patients with GPi-targeted DBS (>100 Hz). Processed 5,000 samples per trial across four conditions (DBS on/off, medication on/off) with 15-minute baseline intervals during a 60-minute DBS deactivation period; removed outliers via SD thresholding and computed ranges and means.",
+    learning:
+      "Found an unexpected trend where tremor velocity decreased when DBS was off and increased with DBS (highest in DBS + medication), underscoring the need to interpret velocity metrics carefully and validate assumptions in clinical signal analysis.",
   },
   {
     title: "Hemodynamics of VSD Occlusion Devices",
-    detail:
-      "Studied flow dynamics around VSD occlusion devices and implications for device design and patient safety.",
+    focus:
+      "Cardiovascular device safety and flow-mediated risk.",
+    approach:
+      "Analyzed flow behavior around VSD occlusion geometries to understand shear patterns, recirculation zones, and implications for thrombosis and endothelial response.",
+    learning:
+      "Gained practical insight into how fluid mechanics informs device geometry, surface considerations, and patient safety in cardiovascular implants.",
   },
 ];
 

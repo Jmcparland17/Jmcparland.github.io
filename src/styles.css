@@ -3,13 +3,13 @@
   font-family: "Sora", system-ui, sans-serif;
   line-height: 1.6;
   font-weight: 400;
-  --bg: #f6f1ea;
-  --bg-alt: #efe7dd;
+  --bg: #eff4fb;
+  --bg-alt: #e1ebf8;
   --ink: #1f1a15;
-  --muted: #5e5247;
-  --accent: #d18544;
-  --accent-dark: #b06a35;
-  --card: #fffaf5;
+  --muted: #4b5b6f;
+  --accent: #5e8fda;
+  --accent-dark: #446fb4;
+  --card: #f9fbff;
   --border: rgba(31, 26, 21, 0.12);
   --shadow: 0 24px 60px rgba(28, 23, 19, 0.12);
 }
@@ -21,8 +21,8 @@
 }
 
 body {
-  background: radial-gradient(circle at top left, #fff3e6, transparent 55%),
-    radial-gradient(circle at 70% 0%, #f3d6b3, transparent 40%),
+  background: radial-gradient(circle at top left, #f6f9ff, transparent 55%),
+    radial-gradient(circle at 70% 0%, #d4e3fb, transparent 40%),
     var(--bg);
   color: var(--ink);
 }
@@ -214,6 +214,41 @@ a {
 
 .card-grid.two {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.project-stack {
+  display: grid;
+  gap: 24px;
+}
+
+.project {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  padding: 24px;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 18px;
+}
+
+.project-title h3 {
+  font-family: "Syne", sans-serif;
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.project-body {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+}
+
+.project-label {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 11px;
+  color: var(--muted);
+  margin-bottom: 8px;
 }
 
 .card {
